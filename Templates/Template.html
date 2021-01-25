@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load static %}
+<html><head><meta name="viewport" content="width=1060">
+		<title>Free Personality Test | SAPA-Project | Background</title>
+		<meta name="description" content="Before we begin asking you about your typical behaviors, feelings, and thoughts, we need to get some information regarding your background. Most of these questions are optional but please don't skip too many!  We use this information to understand the ways that personality varies among people from different towns, states, countries, occupations and backgrounds.  We hope that a better understanding of these relationships will help us to improve the customized feedback we give to future participants.">
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="keywords" content="">
+		<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="../manifest.json">
+		<link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" href="../css/5grid/fonts.css">
+		<script type="text/javascript" src="{% static 'jquery.js'%}"></script>
+		<script type="text/javascript" src="{% static 'geography.js'%}"></script>
+		<script type="text/javascript" src="{% static 'majors.js'%}"></script>
+		<script type="text/javascript" src="{% static 'occupations.js'%}"></script>
+		<link rel="stylesheet" href="{% static 'core.css' %}">
+		<link rel="stylesheet" href="{% static 'style.css' %}">
+		<link rel="stylesheet" href="{% static 'core-desktop.css' %}">
+		<link rel="stylesheet" href="{% static 'jquery.mobile-1.3.0.css' %}">
+		<link rel="stylesheet" href="{% static 'style-desktop.css' %}">
+		<link rel="stylesheet" href="{% static 'core-1000px.css' %}">
+		<!--[if lte IE 8]><link rel="stylesheet" href="../css/ie8.css" /><![endif]-->
+		<!--[if lte IE 7]><link rel="stylesheet" href="../css/ie7.css" /><![endif]-->
+
+	</head>
+	<body class="no-sidebar is-desktop is-1000px" data-new-gr-c-s-check-loaded="14.991.0" data-gr-ext-installed="">
+
+		<!-- Header Wrapper -->
+			<div id="header-wrapper">
+				<div class="5grid-layout 5grid">
+					<div class="row">
+							<!-- Header -->
+								<header id="header">
+										<h2>The SAPA Project</h2>
+										<h3>a personality assessment collaboratory</h3>
+								</header>
+					</div>
+				</div>
+			</div>
+		<!-- End Header Wrapper -->
+		<!-- Main Wrapper -->
+			<div id="main-wrapper">
+				<div class="5grid-layout 5grid">
+					<div class="row">
+						<div class="12u mobileUI-main-content">
+
+							<!-- Content -->
+								<div id="content">
+                                    {% block content %}
+        							{% endblock %}
+                                </div>
+
+							</div> <!-- end id="content" -->
+					</div>
+				</div>
+			</div>	<!-- End Main Wrapper -->
+
+		<!-- Footer Wrapper -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="5grid-layout 5grid">
+					<div class="row">
+						<div class="12u">
+							<div id="copyright">
+							© Part of the Personality Project.
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		<!-- End Footer Wrapper -->
+	
+
+</body></html>

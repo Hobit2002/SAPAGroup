@@ -1,0 +1,731 @@
+ {% extends 'Template.html' %}
+{% block content %}
+<div class="5grid">
+										<div class="row">
+											<div class="12u" style="margin-bottom: 0px;">
+												<h3>Response Summary</h3>
+
+
+<p>You answered <strong>all the items!  You're amazing!</strong>  The <a href="#" onclick="window.open('accuracy.html', '', 'width=600,height=300');">accuracy</a> of your report will be:</p>
+
+<div id="reliabilityMedium"><strong style="color:green;">excellent</strong> for the Big Five scores and <br><strong style="color:green;">excellent</strong> for the 27 factor scores (SPI27).</div><br><hr>
+										<h3>Before viewing your free report...</h3>
+										
+
+												<div class="smallish">
+												<p>Please respond to the following questions about your health, identity, and attitudes.</p>
+												<p>This is your opportunity to help us with our research!  While your responses to these questions will not affect your feedback, they will help us to extend our understanding of the relationship between personality and many important life outcomes.  <strong>Please remember that your responses are anonymous!</strong></p>
+												</div>
+											</div>
+										</div>
+<hr>
+										<div class="small">
+
+
+
+
+										</div>
+
+
+<form name="stopcheck" id="stopcheck" action="LastInfo" method="post">  
+{% csrf_token %}
+
+										<h3><center>Health Profile</center></h3>
+
+<div class="row">
+<div class="4u">   <!-- opens column 1 -->
+
+<ol>	
+
+<li>
+<div class="styled-select">
+<select tabindex="1" name="insurance">
+<option value="999" selected="selected">What is your health insurance status?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">I have health insurance and I know how to use it.</option>
+<option value="2">I have health insurance but I don’t know how to use it.</option>
+<option value="3">I don't know if I have health insurance or not.</option>
+<option value="4">I do not have health insurance.</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="2" name="height">
+<option value="999" selected="selected"> Indicate your height</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="47"> less than 4ft (122cm)</option>
+<option value="48"> 4ft 0in (122cm)</option>
+<option value="49"> 4ft 1in (124cm)</option>
+<option value="50"> 4ft 2in (127cm)</option>
+<option value="51"> 4ft 3in (130cm)</option>
+<option value="52"> 4ft 4in (132cm)</option>
+<option value="53"> 4ft 5in (135cm)</option>
+<option value="54"> 4ft 6in (137cm)</option>
+<option value="55"> 4ft 7in (140cm)</option>
+<option value="56"> 4ft 8in (142cm)</option>
+<option value="57"> 4ft 9in (145cm)</option>
+<option value="58"> 4ft 10in (147cm)</option>
+<option value="59"> 4ft 11in (150cm)</option>
+<option value="60"> 5ft 0in (152cm)</option>
+<option value="61"> 5ft 1in (155cm)</option>
+<option value="62"> 5ft 2in (157cm)</option>
+<option value="63"> 5ft 3in (160cm)</option>
+<option value="64"> 5ft 4in (163cm)</option>
+<option value="65"> 5ft 5in (165cm)</option>
+<option value="66"> 5ft 6in (168cm)</option>
+<option value="67"> 5ft 7in (170cm)</option>
+<option value="68"> 5ft 8in (173cm)</option>
+<option value="69"> 5ft 9in (175cm)</option>
+<option value="70"> 5ft 10in (178cm)</option>
+<option value="71"> 5ft 11in (180cm)</option>
+<option value="72"> 6ft 0in (183cm)</option>
+<option value="73"> 6ft 1in (185cm)</option>
+<option value="74"> 6ft 2in (188cm)</option>
+<option value="75"> 6ft 3in (191cm)</option>
+<option value="76"> 6ft 4in (193cm)</option>
+<option value="77"> 6ft 5in (196cm)</option>
+<option value="78"> 6ft 6in (198cm)</option>
+<option value="79"> 6ft 7in (201cm)</option>
+<option value="80"> 6ft 8in (203cm)</option>
+<option value="81"> 6ft 9in (206cm)</option>
+<option value="82"> 6ft 10in (208cm)</option>
+<option value="83"> 6ft 11in (211cm)</option>
+<option value="84"> 7ft 0in (213cm)</option>
+<option value="85"> more than 7ft (213cm)</option>
+<option value="99"> —&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select> 
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="3" name="weight">
+<option value="999" selected="selected"> Indicate your weight</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="80"> below 80 lbs (below 36 kg)</option>
+<option value="83"> 80 - 85 lbs (36 - 39 kg)</option>
+<option value="88"> 85 - 90 lbs (39 - 41 kg)</option>
+<option value="93"> 90 - 95 lbs (41 - 43 kg)</option>
+<option value="98"> 95 - 100 lbs (43 - 45 kg)</option>
+<option value="103"> 100 - 105 lbs (45 - 48 kg)</option>
+<option value="108"> 105 - 110 lbs (48 - 50 kg)</option>
+<option value="113"> 110 - 115 lbs (50 - 52 kg)</option>
+<option value="118"> 115 - 120 lbs (52 - 54 kg)</option>
+<option value="123"> 120 - 125 lbs (54 - 57 kg)</option>
+<option value="128"> 125 - 130 lbs (57 - 59 kg)</option>
+<option value="133"> 130 - 135 lbs (59 - 61 kg)</option>
+<option value="138"> 135 - 140 lbs (61 - 64 kg)</option>
+<option value="143"> 140 - 145 lbs (64 - 66 kg)</option>
+<option value="148"> 145 - 150 lbs (66 - 68 kg)</option>
+<option value="153"> 150 - 155 lbs (68 - 70 kg)</option>
+<option value="158"> 155 - 160 lbs (70 - 73 kg)</option>
+<option value="163"> 160 - 165 lbs (73 - 75 kg)</option>
+<option value="168"> 165 - 170 lbs (75 - 77 kg)</option>
+<option value="173"> 170 - 175 lbs (77 - 79 kg)</option>
+<option value="178"> 175 - 180 lbs (79 - 82 kg)</option>
+<option value="183"> 180 - 185 lbs (82 - 84 kg)</option>
+<option value="188"> 185 - 190 lbs (84 - 86 kg)</option>
+<option value="193"> 190 - 195 lbs (86 - 88 kg)</option>
+<option value="198"> 195 - 200 lbs (88 - 91 kg)</option>
+<option value="203"> 200 - 205 lbs (91 - 93 kg)</option>
+<option value="208"> 205 - 210 lbs (93 - 95 kg)</option>
+<option value="213"> 210 - 215 lbs (95 - 98 kg)</option>
+<option value="218"> 215 - 220 lbs (98 - 100 kg)</option>
+<option value="223"> 220 - 225 lbs (100 - 102 kg)</option>
+<option value="228"> 225 - 230 lbs (102 - 104 kg)</option>
+<option value="233"> 230 - 235 lbs (104 - 107 kg)</option>
+<option value="238"> 235 - 240 lbs (107 - 109 kg)</option>
+<option value="243"> 240 - 245 lbs (109 - 111 kg)</option>
+<option value="248"> 245 - 250 lbs (111 - 113 kg)</option>
+<option value="253"> 250 - 255 lbs (113 - 116 kg)</option>
+<option value="258"> 255 - 260 lbs (116 - 118 kg)</option>
+<option value="263"> 260 - 265 lbs (118 - 120 kg)</option>
+<option value="268"> 265 - 270 lbs (120 - 122 kg)</option>
+<option value="273"> 270 - 275 lbs (122 - 125 kg)</option>
+<option value="278"> 275 - 280 lbs (125 - 127 kg)</option>
+<option value="283"> 280 - 285 lbs (127 - 129 kg)</option>
+<option value="288"> 285 - 290 lbs (129 - 132 kg)</option>
+<option value="293"> 290 - 295 lbs (132 - 134 kg)</option>
+<option value="298"> 295 - 300 lbs (134 - 136 kg)</option>
+<option value="300"> above 300 lbs (above 136 kg)</option>
+<option value="998">—&nbsp;&nbsp;&nbsp; Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="4" name="exer">
+<option value="999" selected="selected">How often do you exercise?</option>
+<option value="999"> (at least moderately)</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">Very rarely or never</option>
+<option value="2">Less than once a month</option>
+<option value="3">Less than once a week</option>
+<option value="4">1 or 2 times a week</option>
+<option value="5">3 to 5 times a week</option>
+<option value="6">More than 5 times a week</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="5" name="smoke">
+<option value="999" selected="selected">How often do you smoke?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">Never in my life</option>
+<option value="2">Not in the last year</option>
+<option value="3">Less than once a month</option>
+<option value="4">Less than once a week</option>
+<option value="5">1 to 3 days a week</option>
+<option value="6">Most days</option>
+<option value="7">Everyday (5 or less times)</option>
+<option value="8">Up to 20 times a day</option>
+<option value="9">More than 20 times a day</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="6" name="prescriptions">
+<option value="999" selected="selected">Do you take medications as prescribed?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">I've never taken prescription medication</option>
+<option value="2">I often miss a dose</option>
+<option value="3">I sometimes miss a dose</option>
+<option value="4">I rarely miss a dose</option>
+<option value="5">I never miss a dose</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+</ol>
+</div>
+
+<div class="4u">   <!-- opens column 2 -->
+<ol>	
+
+<li>
+Have you had a flu shot in the past year?
+<div class="styled-select">
+<select tabindex="7" name="flu">
+<option value="999" selected="selected">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">No</option>
+<option value="2">Yes</option>
+<option value="3">I don't remember</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+How much caffeine do you consume each day? <br><a href="#" onclick="window.open('caffeine.html', '', 'width=600,height=500');">(click to see our caffeine guide for help)</a>
+<div class="styled-select">
+<select tabindex="8" name="caffeine">
+<option value="999" selected="selected">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">None</option>
+<option value="2">Less than 25 mg a day</option>
+<option value="3">25 to 50 mg a day</option>
+<option value="4">50 to 100 mg a day</option>
+<option value="5">100 to 200 mg a day</option>
+<option value="6">200 to 400 mg a day</option>
+<option value="7">More than 400 mg a day</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="9" name="diabetes">
+<option value="999" selected="selected"> Do you have diabetes?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1"> Yes, I have been diagnosed with Type 1 diabetes</option>
+<option value="2"> Yes, I have been diagnosed with Type 2 diabetes</option>
+<option value="3"> No, I do not have diabetes
+</option><option value="99"> —&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="10" name="veggie">
+<option value="999" selected="selected"> Indicate your dietary preferences</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1"> Omnivore (eat meat, fish, dairy, eggs, etc.)</option>
+<option value="2"> Pescetarian (eat fish but no other meat)</option>
+<option value="3"> Vegetarian (eat eggs &amp; dairy but no meat or fish)</option>
+<option value="4"> 
+Vegan (no meat, fish, eggs, or dairy)</option>
+<option value="5"> Other</option>
+<option value="99"> —&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+</ol></div>
+
+<div class="4u">   <!-- opens column 3 -->
+
+<ol>	
+
+<li>
+<div class="styled-select">
+<select tabindex="11" name="stress">
+<option value="999" selected="selected">How would you rate your stress lately?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">Extremely stressed</option>
+<option value="2">More stressed than usual</option>
+<option value="3">About average</option>
+<option value="4">Less stressed than usual</option>
+<option value="5">Extremely calm</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="12" name="brush">
+<option value="999" selected="selected">How often do you brush your teeth?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">Never or rarely</option>
+<option value="2">Less than once a week</option>
+<option value="3">Once a week or so</option>
+<option value="4">A few times a week</option>
+<option value="5">Once a day</option>
+<option value="5">Twice a day</option>
+<option value="6">More than twice a day</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="13" name="floss">
+<option value="999" selected="selected">How often do you floss?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">Never or rarely</option>
+<option value="2">Less than once a week</option>
+<option value="3">Once a week or so</option>
+<option value="4">A few times a week</option>
+<option value="5">Once a day</option>
+<option value="6">More than once a day</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="14" name="dentist">
+<option value="999" selected="selected">How often do you go to the dentist?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">Never or rarely</option>
+<option value="2">Not in the last year</option>
+<option value="3">1 time in the last year</option>
+<option value="4">2 times in the last year</option>
+<option value="5">3 to 5 times in the last year</option>
+<option value="6">6 or more times in the last year</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="15" name="sleepQ">
+<option value="999" selected="selected">How is the quality of your sleep?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">Poor</option>
+<option value="2">Fair</option>
+<option value="3">Good</option>
+<option value="4">Very good</option>
+<option value="5">Excellent</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="16" name="sleepT">
+<option value="999" selected="selected">How much sleep do you get on average?</option>
+<option value="999">DON'T COUNT TIME AWAKE IN BED</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">less than 5 hours</option>
+<option value="2">5 to 6 hours</option>
+<option value="3">6 to 7 hours</option>
+<option value="4">7 to 8 hours</option>
+<option value="5">8 to 9 hours</option>
+<option value="6">More than 9 hours</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+
+
+
+</ol>
+
+</div>
+
+</div>
+
+
+
+<hr>
+
+<h3><center>Employment Attitudes</center></h3>
+
+<div class="row">
+<div class="4u">   <!-- opens column 1 -->
+
+<ol>	
+<li>
+How likely are you to describe your organization as a good place to work?
+<div class="styled-select">
+<select tabindex="17" name="say">
+<option value="999" selected="selected">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">Very likely</option>
+<option value="2">Somewhat likely</option>
+<option value="3">Neutral</option>
+<option value="4">Somewhat unlikely</option>
+<option value="5">Very unlikely</option>
+<option value="6">—&nbsp;&nbsp;&nbsp;I don't know</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+</ol>
+</div>
+
+<div class="4u">   <!-- opens column 2 -->
+<ol>
+
+<li>How likely are you to stay with your current organization if offered a similar job elsewhere?
+<div class="styled-select">
+<select tabindex="18" name="stay">
+<option value="999" selected="selected">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">Very likely</option>
+<option value="2">Somewhat likely</option>
+<option value="3">Neutral</option>
+<option value="4">Somewhat unlikely</option>
+<option value="5">Very unlikely</option>
+<option value="6">—&nbsp;&nbsp;&nbsp;I don't know</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+
+</ol>
+</div>  <!-- closes <div class="4u"> this is end of column 2 -->
+
+<div class="4u">   <!-- opens column 3 -->
+<ol>
+
+<li>How likely are you to go 'above and beyond' what you're asked to do at work?
+<div class="styled-select">
+<select tabindex="19" name="strive">
+<option value="999" selected="selected">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">Very likely</option>
+<option value="2">Somewhat likely</option>
+<option value="3">Neutral</option>
+<option value="4">Somewhat unlikely</option>
+<option value="5">Very unlikely</option>
+<option value="6">—&nbsp;&nbsp;&nbsp;I don't know</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+</ol>
+</div>  <!-- closes <div class="4u"> this is end of column 3 -->
+
+</div>  <!-- closes <div class="row"> -->
+
+
+
+<hr>
+
+<h3><center>Identity</center></h3>
+
+<div class="row">
+<div class="4u">   <!-- opens column 1 -->
+
+<ol>	
+
+
+<input type="hidden" id="ethnic" name="ethnic" value="999">
+
+<li>
+<div class="styled-select">
+<select tabindex="21" name="SES">
+<option value="999" selected="selected">Estimate your socioeconomic status</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">Very low</option>
+<option value="2">Low</option>
+<option value="3">Lower middle</option>
+<option value="4">Middle</option>
+<option value="5">Upper middle</option>
+<option value="6">High</option>
+<option value="7">Very high</option>
+<option value="8">—&nbsp;&nbsp;&nbsp;I don't know</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+
+<li>
+<div class="styled-select">
+<select tabindex="22" name="relsat">
+<option value="999" selected="selected"> Which describes your status best?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1"> Am committed to an intimate relationship that I find satisfying</option>
+<option value="2"> Am committed to an intimate relationship that I find unsatisfying</option>
+<option value="3"> Am not in a committed intimate relationship and am satisfied with my single status</option>
+<option value="4"> Am not in a committed intimate relationship and am unsatisfied with my single status</option>
+<option value="5"> None of these seems right</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="23" name="religion">
+<option value="999" selected="selected"> What is your present religion, if any?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">Buddhist</option>
+<option value="2">Catholic</option>
+<option value="3">Hindu</option>
+<option value="4">Jewish</option>
+<option value="5">Mormon</option>
+<option value="6">Muslim</option>
+<option value="7">Orthodox (Greek or Russian)</option>
+<option value="8">Protestant</option>
+<option value="9">Something else</option>
+<option value="10">Agnostic</option>
+<option value="11">Atheist</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="24" name="sign">
+<option value="999" selected="selected"> Do you know your Zodiac sign?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1"> No, I don't know.</option>
+<option value="2"> Yes, Aries</option>
+<option value="3"> Yes, Taurus</option>
+<option value="4"> Yes, Gemini</option>
+<option value="5"> Yes, Cancer</option>
+<option value="6"> Yes, Leo</option>
+<option value="7"> Yes, Virgo</option>
+<option value="8"> Yes, Libra</option>
+<option value="9"> Yes, Scorpio</option>
+<option value="10"> Yes, Sagittarius</option>
+<option value="11"> Yes, Capricorn</option>
+<option value="12"> Yes, Aquarius</option>
+<option value="13"> Yes, Pisces</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+</ol>
+</div>
+
+<div class="4u">   <!-- opens column 2 -->
+<ol>
+
+
+
+<li>
+<div class="styled-select">
+<select tabindex="25" name="volunteer">
+<option value="999" selected="selected"> How often do you volunteer?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1"> Never</option>
+<option value="2"> Less than once a year</option>
+<option value="3"> Once or twice a year</option>
+<option value="4"> Several times a year</option>
+<option value="5"> Once a month</option>
+<option value="6"> 2 to 3 times a month</option>
+<option value="7"> About once a week</option>
+<option value="8"> More than once a week</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="26" name="mascfem">
+<option value="999" selected="selected"> How masculine/feminine are you?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1"> Completely masculine</option>
+<option value="2"> Mostly masculine</option>
+<option value="3"> Somewhat more masculine than feminine</option>
+<option value="4"> Gender neutral</option>
+<option value="5"> Somewhat more feminine than masculine</option>
+<option value="6"> Mostly feminine</option>
+<option value="7"> Completely feminine</option>
+<option value="8"> Other</option>
+<option value="9">—&nbsp;&nbsp;&nbsp;I don't know</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="27" name="religious">
+<option value="999" selected="selected"> How often do you attend religious services?</option>
+<option value="999">INCLUDE CEREMONIES OF ANY TYPE</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">Never or rarely</option>
+<option value="2">Once or twice a year</option>
+<option value="3">Several times a year</option>
+<option value="4">About once a month</option>
+<option value="5">2 to 3 times a month</option>
+<option value="6">About once a week</option>
+<option value="7">More than once a week</option>
+<option value="8">Every day</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="28" name="MBTI">
+<option value="999" selected="selected"> Aware of the Myers-Briggs Type Indicator®?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">No, never heard of it.</option>
+<option value="2">I've heard of it but don't know much about it.</option>
+<option value="3">I'm familiar with it and would recommend it.</option>
+<option value="4">I'm familiar with it and would not recommend it.</option>
+<option value="5">I'm familiar with it and have mixed feelings.</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+</ol>
+</div>  <!-- closes <div class="4u"> this is end of column 2 -->
+
+<div class="4u">   <!-- opens column 3 -->
+<ol>
+
+<li>
+<div class="styled-select">
+<select tabindex="29" name="credit">
+<option value="999" selected="selected"> Do you know your credit score?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">No, I don't know.</option>
+<option value="2">Very Poor (300 to 579).</option>
+<option value="3">Fair (580 to 669).</option>
+<option value="4">Good (670 to 739).</option>
+<option value="5">Very good (740 to 799).</option>
+<option value="6">Exceptional (800 to 850).</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="30" name="orientation">
+<option value="999" selected="selected"> Indicate your sexual orientation</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">Heterosexual or straight</option>
+<option value="2">Gay or lesbian</option>
+<option value="3">Bisexual</option>
+<option value="4">Other</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="31" name="tweets">
+<option value="999" selected="selected"> How often do you tweet or retweet?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">I've never used Twitter.</option>
+<option value="2">I have an account but never look at it.</option>
+<option value="3">I use Twitter but tweet less than once a month.</option>
+<option value="4">Tweet less than once a week.</option>
+<option value="5">Tweet a few times a week.</option>
+<option value="6">Tweet about once a day.</option>
+<option value="7">Tweet a few times a day.</option>
+<option value="8">Tweet more than a few times a day.</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+<li>
+<div class="styled-select">
+<select tabindex="32" name="ennea">
+<option value="999" selected="selected"> Aware of the Enneagram of personality?</option>
+<option value="999">&nbsp;&nbsp;&nbsp;----------------</option>
+<option value="1">No, never heard of it.</option>
+<option value="2">I've heard of it but don't know much about it.</option>
+<option value="3">I'm familiar with it and would recommend it.</option>
+<option value="4">I'm familiar with it and would not recommend it.</option>
+<option value="5">I'm familiar with it and have mixed feelings.</option>
+<option value="99">—&nbsp;&nbsp;&nbsp;Prefer not to say</option>
+</select>
+</div>
+</li>
+
+</ol>
+</div>  <!-- closes <div class="4u"> this is end of column 3 -->
+
+</div>  <!-- closes <div class="row"> -->
+
+
+
+										<div class="row">
+
+											<div class="4u">
+												<ol>
+												<li>
+												</li>
+												</ol>
+											</div>
+											<div class="4u">
+												<ol>
+												<li>
+												<p><button tabindex="30" type="submit" class="buttondemo" name="submit">View Your Report</button></p>
+												</li>
+												</ol>
+											</div>
+											<div class="4u">
+												<ol>
+												<li>
+												</li>
+												</ol>
+											</div>
+										</div>
+</form>  <!-- closes form id="stopcheck"  -->
+
+									</div>  {% endblock %}

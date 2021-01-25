@@ -1,0 +1,42 @@
+{% extends 'Template.html' %}
+{% block content %}
+<div id="NewTest">
+    <div class="4u offset-4u">
+        <h3>Game code:{{GameCode}}</h3>
+        <div id="MemberList"></div>
+            <div id="HidePart">
+                <input id="NewPart" placeholder="New participant">
+                <button id="AddPartic" onclick="AddPartic(NewPart)">Add</button>
+                
+            </div>
+        </div>
+    </div>
+<div id="ConnectToExisting">
+    <form action="JoinGame">
+        <div class="4u offset-4u">
+            <input name="Name" placeholder="Your name">
+            <input name="GameCode" placeholder="Gamecode">
+            <ul>
+            <button class="button" style="float:center;">Join</button>
+            </li>
+            </ul>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+function AddPartic(elem){
+    Name=elem.value
+    elem.value=""
+    $.ajax({
+        url:"/AddPartic",
+        data:{"Name":Name},
+        success:function(result){
+            MemberList.innerHTML+="<br>"+Name
+        }
+    })
+}
+
+</script>
+{% endblock %}

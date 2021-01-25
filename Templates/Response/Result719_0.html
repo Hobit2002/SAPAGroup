@@ -1,0 +1,971 @@
+
+<!DOCTYPE HTML>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+	<head>
+		<title>Free Personality Test | SAPA-Project | Your Customized Report</title>
+		<meta name="description" content="You made it all the way through the free personality test to your customized report page. Congratulations! If you'd like to save or print your report, be sure to see the link below. Thank you for contributing to our personality research!">
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="keywords" content="" />
+		<link rel="icon" href="https://www.sapa-project.org/images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="https://www.sapa-project.org/css/5grid/fonts.css" />
+		<script src="https://www.sapa-project.org/css/5grid/jquery.js"></script>
+		<script src="https://www.sapa-project.org/css/5grid/echarts.common.min.js"></script>
+		<script src="https://www.sapa-project.org/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none&amp;mobileUI_titleBarOverlaid=1&amp;mobileUI_titleBarHeight=60&amp;viewport_is1000px=1060&amp;mobileUI_openerWidth=80"></script>
+		<script src="https://www.sapa-project.org/css/5grid/RGraph.common.core.js"></script>
+		<script src="https://www.sapa-project.org/css/5grid/RGraph.drawing.text.js"></script>
+		<script src="https://www.sapa-project.org/css/5grid/RGraph.rose.js"></script>             <!-- Just needed for rose charts -->
+		<script src="https://www.sapa-project.org/css/5grid/RGraph.common.dynamic.js"></script>
+		<script src="https://www.sapa-project.org/css/5grid/RGraph.common.resizing.js"></script>
+		<script src="https://www.sapa-project.org/css/5grid/RGraph.common.context.js"></script>
+		<script src="https://www.sapa-project.org/css/5grid/RGraph.common.tooltips.js"></script>
+<!---		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script> -->
+		<noscript>
+			<link rel="stylesheet" href="https://www.sapa-project.org/css/5grid/core.css" />
+			<link rel="stylesheet" href="https://www.sapa-project.org/css/5grid/core-desktop.css" />
+			<link rel="stylesheet" href="https://www.sapa-project.org/css/5grid/core-1200px.css" />
+			<link rel="stylesheet" href="https://www.sapa-project.org/css/5grid/core-noscript.css" />
+			<link rel="stylesheet" href="https://www.sapa-project.org/css/style.css" />
+			<link rel="stylesheet" href="https://www.sapa-project.org/css/style-desktop.css" />
+		</noscript>
+		<meta property="fb:admins" content="dmcondon" />
+		<meta property="fb:app_id" content="1281612068599381" />
+		<meta property="og:url"           content="https://sapa-project.org/survey/report.php" />
+		<meta property="og:type"          content="website" />
+		<meta property="og:title"         content="SAPA-Project | Your Customized Personality Profile Report" />
+		<meta property="og:description"   content="Your full report includes your scores on the 27 narrow traits of the SPI-27, your scores on the Big Five traits (the SPI-5), and your cognition score." />
+		<meta property="og:image"         content="https://sapa-project.org/images/theSAPAProject.png" />
+		<style type="text/css">
+ 
+			#share-buttons img {
+				width: 35px;
+				padding: 5px;
+				border: 0;
+				box-shadow: 0;
+				display: inline;
+			}
+ 
+		</style>
+	</head>
+	<body class="no-sidebar">
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!--
+<script type='text/javascript'>
+function fbs_click() {u='<data:post.url/>';t='<data:post.title/>';window.open('http://www.facebook.com/sharer.php?u='+escape(window.location.href)+'&amp;t='+document.title, 'sharer','toolbar=0,status=0,width=626,height=436');return false;}
+</script>
+-->
+
+<script type="text/javascript"><!--
+ function toggleMe(a){ 
+ var e=document.getElementById(a); 
+ if(!e)return true; 
+ if(e.style.display=="none"){ 
+ e.style.display="block" 
+ } else { 
+ e.style.display="none" 
+ } 
+ return true; 
+ } 
+</script>
+
+		<!-- Header Wrapper -->
+			<div id="header-wrapper">
+				<div class="5grid-layout">
+					<div class="row">
+						
+							<!-- Header -->
+								<header id="header">
+										<a href="https://sapa-project.org"><h2>The SAPA Project</h2></a>
+										<h3>a personality assessment collaboratory</h3>
+								</header>
+
+					</div>
+				</div>
+			</div>
+		<!-- End Header Wrapper -->
+		
+		<!-- Main Wrapper -->
+			<div id="main-wrapper">
+				<div class="5grid-layout">
+					<div class="row">
+						<div class="12u mobileUI-main-content">
+							<div id="content">
+
+									<div class="5grid">
+										<div class="row">
+											<div class="12u">
+
+<h3 style="text-align:center;">Your Personality Report</h3>
+
+<h1 style="text-align:center;">(scroll down to see the full report.)</h1>
+
+												<div class="smallish">
+												<p>Here's the full report on your personality profile, including your scores on the 27 narrow traits of the SPI-27, your scores on the Big Five traits (the SPI-5), and your cognition score.  <a href="#" onclick="window.open('savingyourreport.html', '', 'width=600,height=500');"><strong>Click here for advice about saving your report.</strong></a></p>
+												</div>
+
+<!-- Create the SPI27 box -->
+
+<div class="boxyboxboxOuterSPI27">
+<a name="CA"></a><div style="color: #FFF; font-weight: bold; text-align: center;">SPI 27 Factor Trait Scores</div>
+
+<div class="boxyboxboxInner">
+<p></p>
+<div class="boxyboxboxInnerText">
+
+										<div class="row">
+											<div class="12u">
+
+<p>This figure provides a visual summary of your scores on the factors of the SPI-27.  The black line down the middle indicates the average score for each trait.  The colored bars show how much you scored above the average (the colored bar extends out to the right from the mid-line) or below the average (left of the mid-line).  If your score matches the average, you won't see any color.</p>
+    <div id="spi-27" style="height: 600px;margin:0 auto;"></div>
+<script>
+var myChart = echarts.init(document.getElementById('spi-27'));
+option = {
+    title: {
+        x: 'center',
+        top: '30px',
+        text: 'SPI 27 Factor Trait Scores',
+        subtext: 'sapa-project.org',
+        textStyle: {
+            fontFamily: 'Source Sans Pro, sans-serif'
+        }
+    },
+    tooltip : {
+        trigger: 'axis',
+        axisPointer : {
+            type : 'shadow'
+        },
+        formatter:function (params) {
+            var rv = params[0].value + 50;
+            return params[0].name + ': ' + rv;
+        },
+        textStyle: {
+            fontFamily: 'Source Sans Pro, sans-serif'
+        }
+    },
+    toolbox : {
+        show : true,
+        x : 'center',
+        y : 'bottom',
+        padding : 0,
+        backgroundColor: 'rgba(0,0,0,0)',
+        borderColor: '#ccc',
+        feature : {
+            saveAsImage : {
+                show : true,
+                title : 'save image',
+                type : 'png',
+            }
+        }
+    },
+    grid: {
+        top: 80,
+        bottom: 30
+    },
+    xAxis: {
+        min: -50,
+        max: 50,
+        type : 'value',
+        position: 'top',
+        splitLine: {lineStyle:{type:'dashed'}},
+        axisLine: {
+            show:false
+        },
+        axisLabel:{
+            show:false
+        },
+        axisTick:{
+            show:false
+        }
+    },
+    yAxis: {
+        type : 'category',
+        nameTextStyle: {
+            fontFamily: 'Source Sans Pro, sans-serif',
+        },
+        axisLine: {show: true},
+        axisLabel: {show: false},
+        axisTick: {show: false},
+        splitLine: {show: false},
+        data : ["Irritability","Anxiety","EmotionalStability","SelfControl","WellBeing","EmotionalExpressiveness","Industry","Impulsivity","Order","Perfectionism","EasyGoingness","Authoritarianism","Honesty","Trust","Compassion","Conservatism","Intellect","Creativity","ArtAppreciation","Introspection","Conformity","Sociability","SensationSeeking","AttentionSeeking","Humor","Charisma","Adaptability"]
+    },
+    series : [
+        {
+            type:'bar',
+            label: {
+                normal: {
+                    show: true,
+                    formatter: '{b}'
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: function(params) {
+                            var colorList = ["#69bbff","#02cac0","#01d386","#6ded8e","#99e6a2","#45b346","#6f661e","#795600","#ffc36e","#df961d","#ffa948","#b55200","#920600","#fc5c5a","#eb3e64","#c61073","#ff90d7","#a30f86","#53004c","#6a0070","#390d5b","#783bad","#a26de5","#4d75ee","#013a89","#0156a3","#028ce6"];
+                            return colorList[params.dataIndex]
+                        },
+                }
+            },
+            data:[{"value":-4,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":-4,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":8,"label":{"normal":{"position":"left","offset":[-25,0]}}},{"value":8,"label":{"normal":{"position":"left","offset":[-25,0]}}},{"value":-8,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":-1,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":-2,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":0,"label":{"normal":{"position":"left","offset":[-25,0]}}},{"value":3,"label":{"normal":{"position":"left","offset":[-25,0]}}},{"value":-8,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":-1,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":-6,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":-3,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":-4,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":0,"label":{"normal":{"position":"left","offset":[-25,0]}}},{"value":5,"label":{"normal":{"position":"left","offset":[-25,0]}}},{"value":-2,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":-11,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":-7,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":-8,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":-3,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":-4,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":-4,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":1,"label":{"normal":{"position":"left","offset":[-25,0]}}},{"value":-4,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":-1,"label":{"normal":{"position":"right","offset":[25,0]}}},{"value":-1,"label":{"normal":{"position":"right","offset":[25,0]}}}]
+        }
+    ]
+};
+myChart.setOption(option);
+</script><p style="text-align:center"><strong>download the image</strong></p>
+
+<div id="share-buttons">
+<p style="text-align:center">    
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=https://sapa-project.org/" target="_blank">
+        <img src="https://sapa-project.org/images/facebook.png" alt="Facebook" />
+    </a>
+    
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=https://sapa-project.org/&amp;text=Check%20out%20my%20personality%20signature&amp;hashtags=mySPIscores" target="_blank">
+        <img src="https://sapa-project.org/images/twitter.png" alt="Twitter" />
+    </a>
+    
+    <!-- LinkedIn -->
+    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://sapa-project.org/" target="_blank">
+        <img src="https://sapa-project.org/images/linkedin.png" alt="LinkedIn" />
+    </a>
+    
+    <!-- Reddit -->
+    <a href="http://reddit.com/submit?url=https://sapa-project.org/&amp;title=Reddit" target="_blank">
+        <img src="https://sapa-project.org/images/reddit.png" alt="Reddit" />
+    </a>
+    
+    <!-- Tumblr-->
+    <a href="http://www.tumblr.com/share/link?url=https://sapa-project.org/&amp;title=Tumblr" target="_blank">
+        <img src="https://sapa-project.org/images/tumblr.png" alt="Tumblr" />
+    </a>
+     
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=https://sapa-project.org/" target="_blank">
+        <img src="https://sapa-project.org/images/google.png" alt="Google" />
+    </a>
+    
+    <!-- Email -->
+    <a href="mailto:?Subject=mySPIscores&amp;Body=Check%20out%20my%20personality%20signature!%20 https://sapa-project.org/">
+        <img src="https://sapa-project.org/images/email.png" alt="Email" />
+    </a>
+</p> 
+</div>
+
+
+<p>The next section gives more detailed descriptions of each trait and some thoughts about the meaning of your scores.  By default, we only show the feedback for your 4 most extreme scores.  <strong>To see your scores on all of the factors, click the link at the bottom of this box.</strong></p>
+
+<!-- Loop through the 27 starting here -->
+
+<hr>
+
+<h3 style="text-align:center"><strong>Creativity</strong></h3>
+<p></p>
+
+<p>The Creativity scale measures one's tendency to come up with new and different ideas, as well as one's interest in breaking from the mold and following less trodden paths, whether through work or hobbies. Creativity is not the same thing as intelligence, but rather a particular mode of thinking and expression. Individuals high in Creativity may be better at more creative jobs that allow room for creative expression than those which are heavily structured. They may also be better at divergent thinking, which entails coming up with multiple solutions to a single problem.  This is distinguished from convergent thinking, which involves finding the single correct answer to a problem. Individual's lower in Creativity are by no means necessarily less smart, but may simply have more respect for previously established modes of thinking and an appreciation for simplicity and tradition.</p>
+<p style="text-align:center"><strong>Your score of 39 on Creativity places you higher than 14% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Creativity/39.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Creativity scale indicates that you are less likely to let your imagination run away with you or to deviate from pre-established modes of thinking and action. You likely prefer the path of least resistance &mdash; the most practical and expedient solution.  You might be a good deal less comfortable in situations where you are being pressed to think outside of the box, but at the same time, you are probably excellent at doing things in the way you best know how.</p><p style="text-align:center">"<ital>Inspiration will come, but it has to find you working.</ital>"<br>&mdash; Pablo Picasso</p> 
+
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Introspection</strong></h3>
+<p></p>
+
+<p>Introspection is a factor concerning one's tendency to turn thoughts inward and onto oneself, as well as one's efforts to grapple with understanding the world more deeply. Individuals high in Introspection may find themselves drifting off into spirals of thought as they consider things about life and try to understand their role within everything. They may be less content with existing explanations for different phenomena. Individuals low in Introspection may prefer to stay focused on what is in front of them and not to concern themselves over what is invisible or abstract. They may rely more on an intuitive understanding of the world and therefore feel less of a need to delve into things or to ruminate and reflect.</p>
+<p style="text-align:center"><strong>Your score of 42 on Introspection places you higher than 21% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Introspection/42.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Introspection scale indicates that you are somewhat lower in Introspection. Most likely, you do not concern yourself too often with reflection and the pursuit of self-understanding, although you may have a moment here and there in which you contemplate your life. At the end of the day, you are likely focused on what you see as more productive modes of thought and action rather than rumination or daydreaming.</p><p style="text-align:center">"<ital>I'm not used to introspection. I've never lingered on my feelings. The show must go on.</ital>"<br>&mdash; Brenda Lee</p> 
+
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Well-Being</strong></h3>
+<p></p>
+
+<p>Well-Being is something that many people around the world covet and even see as life's ultimate goal &mdash; countless self-help materials have been developed with the intention of aiding people in this respect. Individuals who are high in Well-Being tend to feel good about themselves and their lives. They typically feel comfortable with who they are, and rarely experience feelings of worthlessness or hopelessness. This positive attitude towards oneself may confer a variety of benefits, including better relationships, better health, and less stress. Research shows that having perspective and gratitude can result in greater Well-Being. Those scoring low in Well-Being may have more difficulty enjoying what life has to offer.</p>
+<p style="text-align:center"><strong>Your score of 42 on Well-Being places you higher than 21% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/WellBeing/42.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Well-Being scale indicates that you feel some discontentment with yourself or with the way things are going. Whatever the reason, you likely feel that there is room for improvement. It may be that you are highly aware and sensitive to imperfections and therefore are constantly looking for ways to be a better person. You might look around at other people who seem similar to you and wonder why it is that they are more content with themselves than you are with yourself.</p><p style="text-align:center">"<ital>Everyone wants happiness. No one wants pain, but you can't have a rainbow without a little rain.</ital>"<br>&mdash; Zion Lee</p> 
+
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Emotional Stability</strong></h3>
+<p></p>
+
+<p>An Emotionally-Stable individual is not easily disturbed by daily hassles and recovers quickly when more substantial stressors inevitably occur.  Emotional stability is not necessarily synonymous with consistent positivity, but simply implies lower levels of reactivity.  This trait is sometimes used to describe the opposite end of the trait of Neuroticism, though the latter tends to include a broader range of individual differences.  The key to Emotional Stability, as the name suggests, is the degree and speed with which moods shift.  Those who are high in stability are better able to endure stress without getting flustered.  Those who are low, by contrast, will experience more fluctuating moods as they go about their day.</p>
+<p style="text-align:center"><strong>Your score of 58 on Emotional Stability places you higher than 79% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/EmotionalStability/58.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Emotional Stability scale indicates that you are somewhat high in stability.  You are probably less easily upset or emotionally reactive, and you may handle daily hassles better than most. Although you probably get agitated from time to time, you are more likely to deal effectively and coolly with frustrating or threatening situations. Due to your controlled reactions, at times others may find you cold or aloof.  Emotionally stable individuals tend to be more calm and free from persistent negative feelings. Freedom from negative feelings does not mean that these individuals experience more positive feelings than others, but they are less likely to experience frequent mood swings or be shook up by negative events. Some emotionally stable individuals may go so far as to seek out thrilling situations, such as scary movies and roller-coasters, because they perceive these situations to be less threatening than most people.</p><p style="text-align:center">"<ital>When stability becomes a habit, maturity and clarity follow.</ital>"<br>&mdash; B.K.S. Iyengar</p> 
+
+<hr>
+
+<p></p>
+<h3 style="text-align:center">
+<a style="cursor:pointer; color: #000000; font-weight: bold;" onclick="return toggleMe('openHideSPI27')">Click here to SHOW/HIDE the rest of your SPI-27 scores.</a>
+</h3>
+<p></p>
+
+<div id="openHideSPI27" style="display:none;">
+
+
+<!-- Next one of 27 -->
+
+<hr>
+
+<h3 style="text-align:center"><strong>Perfectionism</strong></h3>
+<p></p>
+
+<p>The Perfectionism factor is one of the most intuitive to understand &mdash; it can be explained simply as an individual's desire for perfection. An individual high in Perfectionism will likely set high expectations and then expect those to be met, by themselves and others.  Perfectionists notice many errors and flaws, and are therefore often hard to satisfy. Their work may be of an especially high standard, but those around them feel pressured as they strive to meet expectations. At its most extreme, Perfectionism has the potential to cause difficulties in relationships. Individuals low in Perfectionism feel less need to aspire to lofty standards, and are more content with getting to the point of "good enough" and leaving it at that. They may have more ease in letting go of one project and moving on to the next than those high in Perfectionism.</p>
+<p style="text-align:center"><strong>Your score of 42 on Perfectionism places you higher than 21% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Perfectionism/42.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Perfectionism scale indicates that you are somewhat lower in Perfectionism. You are more comfortable with imperfection, and flexible even when some things fall through. You may have a more pragmatic understanding of the world and realize that some things are out of your hands, no matter how much a person strains for things to turn out a certain way. You probably have a pretty good idea of when to let something go, when to forgive others, and when to move on to the next thing. Others are probably somewhat comfortable sharing their weaknesses with you.</p><p style="text-align:center">"<ital>Perfectionism is self-abuse of the highest order.</ital>"<br>&mdash; Anne Wilson Schaef</p> 
+
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Self Control</strong></h3>
+<p></p>
+
+<p>Self-Control is a measure of a person's ability to control their short-term desires, often for the sake of long-term benefit. This can involve an individual's adeptness at controlling cravings, or by the same token the frequency with which an individual finds themselves succumbing to temptation. Individuals high in Self-Control have an easier time holding themselves back from something that might cause them trouble in the long run. Individuals who score lower will often find themselves splurging, and may adopt a policy of "act now, figure it out later" when faced with something enticing. Ultimately, they ascribe to a more hedonistic lifestyle, and may see less point in delaying pleasure.  Many people wonder how Self-Control and Impulsivity are related.  They tend to have a moderate negative correlation (about -0.4).  Self-Control relates more to the resistance of urges, temptations and cravings whereas Impulsivity more generally reflects acting before thinking.</p>
+<p style="text-align:center"><strong>Your score of 58 on Self Control places you higher than 79% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/SelfControl/58.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Self-Control scale indicates that you are fairly high in Self-Control. More than most, you are able to curb your cravings and resist temptation. Even if confronted with something that would be irresistible for most (but unhealthy in the long run), you probably have less difficulty saying no. Your self-discipline and forward thinking may mean that you miss out on more fun in the shorter-term, but that things pay off for you in the long run.</p><p style="text-align:center">"<ital>You have power over your mind &mdash; not outside events. Realize this, and you will find strength.</ital>"<br>&mdash; Marcus Aurelius</p> 
+
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Art Appreciation</strong></h3>
+<p></p>
+
+<p>Art Appreciation involves an individual's interest in works of art and artistic activities. This includes one's attitudes towards poetry, the visual arts, performing arts, literature and more. A person high in Art Appreciation will seek exposure to these topics, though they may not be particularly artistic. Individuals low in Art Appreciation may not feel that art is particularly enticing or relevant to their lives, and likely concern themselves with work or hobbies of a different nature.</p>
+<p style="text-align:center"><strong>Your score of 43 on Art Appreciation places you higher than 24% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/ArtAppreciation/43.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Art Appreciation scale indicates that you are somewhat lower in Art Appreciation. Most likely, you do not concern yourself too often with artistic creation or consumption. It could be that you prefer certain types of art over others, or simply that you prefer activities unrelated to art altogether. Although you may be knowledgeable about aspects of the arts and literature, it is likely that art is not a very important part of your life.</p><p style="text-align:center">"<ital>Simplicity is the ultimate sophistication.</ital>"<br>&mdash; Leonardo de Vinci</p> 
+
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Authoritarianism</strong></h3>
+<p></p>
+
+<p>The Authoritarianism dimension relates to an individual's attitudes about rules and laws. Those high in Authoritarianism typically believe that laws exist for good reason (to keep those who would otherwise transgress in line) and thus should be unequivocally obeyed. To such an individual, authority is crucial to maintaining social order, and rebellious behavior should be nipped in the bud. This belief may be rooted in a more negative view of humanity as naturally unruly and therefore requiring authority to be properly whipped into shape.  Those who are low in Authoritarianism believe that strict laws and punishments are not always necessary or useful for reducing crime and improving society.  This view is often borne out of concerns that many rules and laws are biased or are not equally enforced among all individuals.  While these issues are better suited for political and philosophical forums, the reality is that perspectives on these issues underlie differences in the trait of Authoritarianism.  Authoritarianism tends to be moderately positively correlated (0.4) with Conservatism.</p>
+<p style="text-align:center"><strong>Your score of 44 on Authoritarianism places you higher than 27% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Authoritarianism/44.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Authoritarianism scale indicates that you are somewhat lower in Authoritarianism. Most likely, you are wary of authority and may feel that authoritative figures or institutions may benefit some groups of people more than others. You may also have a bit of a rebellious streak in you, and resent the imprint of authority on your own life.</p><p style="text-align:center">"<ital>Blind belief in authority is the greatest enemy of truth.</ital>"<br>&mdash; Albert Einstein</p> 
+
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Conservatism</strong></h3>
+<p></p>
+
+<p>The Conservatism factor brings together a number of attitudes which often, though not always, relate to each other. These include, perhaps most obviously, a tendency to support conservative politics and a strong nationalistic patriotism, but may also involve religiosity. Typically, individuals who score low in Conservatism tend to be less religious-minded and tend to vote for liberal political candidates. They may be less nationalistic than others. This dimension is also highly correlated with one's stance on related issues, such as the military, the role of government, the importance of national security, welfare, gun ownership, business, fiscal responsibility, and various values.</p>
+<p style="text-align:center"><strong>Your score of 55 on Conservatism places you higher than 69% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Conservatism/55.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Conservatism scale indicates that you are somewhat high in Conservatism. You may be more likely to support conservative candidates, to feel a strong patriotism for your country, and to be religious. Depending on your personal background and the country you live in, this may also mean that, given the choice, you lean more towards supporting traditional family roles and values as well as the military, place less faith in welfare programs, and support private or small business, among other things. But, as you don't lean too heavily in one political direction, it is possible that you are sometimes able to find more ideological common ground with liberals.  Of course, it may also be the case that your views on these issues vary as many conservatives don't see eye to eye on everything.</p><p style="text-align:center">"<ital>The conservative party, the modern conservative party, is on the side of people who want to work hard and get on.</ital>"<br>&mdash; George Osborne</p> 
+
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Humor</strong></h3>
+<p></p>
+
+<p>People often rank Humor highly among the traits that they value in a potential romantic partner or friend. Individuals high in humor may be popular as a result of the mirth they spread around freely. They are likely less restrained in showing that they think something is funny, and more likely to keep a situation light and enjoyable through either their own jokes or their enthusiastic approval of others' jokes. However, individuals scoring low in humor are not necessarily dourhttps://www.sapa-project.org. in fact, they may even have a very good internal sense of humor that they simply express less openly or express only to those close to them. Or, they might be more likely to express their humor through writing or art than through verbal laughter or loud jokes.</p>
+<p style="text-align:center"><strong>Your score of 46 on Humor places you higher than 34% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Humor/46.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Humor scale indicates that you are somewhat less likely to joke around or to laugh openly and frequently. You might have a more serious outlook on life, which could be due to an awareness of life's harsh realities or the need to bear a lot of responsibility.  This doesn't mean that you can't enjoy a good joke. It's simply that you're less likely to guffaw loudly, or to get up on a table and dance just to entertain people.</p><p style="text-align:center">"<ital>When comedy fails, seriousness begins to leak back in.</ital>"<br>&mdash; Susan Sontag</p> 
+
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Trust</strong></h3>
+<p></p>
+
+<p>Trust measures an individual's comfort at taking others at their word, and their willingness to believe things as they are presented. It also relates to ones' beliefs about the motivations of others and the extent to which others will treat them with fairness and objectivity. Individuals high in Trust are generally more likely to have an optimistic view of human nature and less likely to doubt the intentions of others. By contrast, those who are low in Trust tend to be hesitant about exposing their vulnerabilities to others.  They're also often reluctant to take others at their word &mdash; they reach their own conclusions only after careful consideration of the facts.</p>
+<p style="text-align:center"><strong>Your score of 46 on Trust places you higher than 34% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Trust/46.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Trust scale indicates that you are sometimes wary about trusting others to be truthful or moral. Though you likely recognize that many people can, at times, be truly honest or that they may even have your best interests at heart, you are on the look-out for wolves in sheep's clothing.  Others probably recognize that they will have to prove themselves before earning your trust.  Some people are put off by this, but those who earn your trust will be rewarded with your loyalty.</p><p style="text-align:center">"<ital>I've had so many knives stuck in me, when they hand me a flower, I can't quite tell what it is. It takes time.</ital>"<br>&mdash; Charles Bukowski</p> 
+
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Sociability</strong></h3>
+<p></p>
+
+<p>Sociability relates to behaviors that are predictable given the name of the trait &mdash; individuals who are highly sociable prefer to be around other people much more than being alone.  Of course, humans are social animals so most individuals do not like to go long periods of time without social contact of one form or another.  Individuals differ however in terms of the extent to which they can handle large crowds or nearly constant socialization.  Individuals who are low on Sociability prefer small groups and may even prefer to be alone most of the time.  Those who are high on Sociability think of themselves as alone when working in a loud coffeeshop and prefer to be surrounded by large groups of friends.  Sociability is a hallmark of Extraversion so it is no surprise that it is moderately-to-strongly correlated with the traits of Sensation-Seeking (.4), Attention-Seeking (.5), and Charisma (.5).  But it is also positively correlated with a sense of well-being, likely due to humans' strong need for social support and friendship.</p>
+<p style="text-align:center"><strong>Your score of 46 on Sociability places you higher than 34% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Sociability/46.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Sociability scale indicates that you are somewhat low in Sociability. You may rarely enjoy large parties, but it depends on the circumstances and your energy level.  More likely, you prefer the company of a few friends, especially those who you know quite well.  You probably don't spend much time chatting with people you've never met and you probably don't care much for big crowds.</p><p style="text-align:center">"<ital>Being alone has a power that very few people can handle.</ital>"<br>&mdash; Steven Aitchinson</p> 
+
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Anxiety</strong></h3>
+<p></p>
+
+<p>Anxiety is something that many people struggle with. It's difficult to escape entirely, as most people typically feel anxiety when put into stressful situations. A little anxiety has been shown to provide a useful boost in motivating people to perform well or to change their behavior if necessary. But at its most extreme, anxiety can get in the way of daily living and make an individual fearful of engaging in various situations. Anxiety can be generalized (involving a more distributed sense of foreboding or malaise) or specific to certain conditions, such as social engagement or test-taking. For individuals who find that anxiety creates problems in living, various therapies and interventions are available to encourage more positive thinking and make it easier to understand, process, and manage anxious feelings.</p>
+<p style="text-align:center"><strong>Your score of 46 on Anxiety places you higher than 34% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Anxiety/46.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Anxiety scale indicates that you are somewhat less likely than average to feel anxious. Even in situations which might make other people nervous or worried, you most likely manage to keep your cool. While this doesn't necessarily mean that you never feel anxious, it does mean that you are relatively more skilled at regulating your thoughts and emotions when it comes to situations that make others nervous or worried.</p><p style="text-align:center">"<ital>Why worry? If you've done the very best you can, worrying won't make it any better.</ital>"<br>&mdash; Walt Disney</p>
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Sensation-Seeking</strong></h3>
+<p></p>
+
+<p>The Sensation-Seeking factor involves one's desire to engage in more adventurous or risky activities. Sensation-Seeking can take a variety of forms; for instance, some individuals who score highly may love scaling mountains but eschew recreational drug use, while others feel the opposite. Individuals high in Sensation-Seeking may feel bored when idle or if they go long stretches with nothing exciting or thrilling to do. Individuals low in Sensation-Seeking derive less pleasure from thrilling activities, often because they find higher levels of arousal unpleasant.</p>
+<p style="text-align:center"><strong>Your score of 46 on Sensation-Seeking places you higher than 34% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/SensationSeeking/46.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Sensation-Seeking scale indicates that you are somewhat low in Sensation-Seeking. It is less likely that you derive enjoyment from risky or dangerous activities. This means that, although you may not shy away from difficulty or excitement per se, you know that some things are not worth the risk. You have a mature understanding of the potential negative consequences that may come from engaging in risky behavior, and you wisely take a pass when risky opportunities arise.</p><p style="text-align:center">"<ital>Safety may get old but so do those who practice it.</ital>"<br></p>
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Irritability</strong></h3>
+<p></p>
+
+<p>Individuals who are high in Irritability may be more easily rattled by things, whether it be the shortcomings of others, one's environment, or the world in general. This might be due to a lower tolerance for frustration or a sensitivity to unpleasant stimuli. Individuals high in Irritability find themselves frequently bothered by things, often despite their efforts to feel otherwise. Although frequently feeling annoyed doesn't necessarily mean that a person will always show it outwardly or lose their temper, some individuals high in Irritability may be perceived as angrier than the average person. Conversely, an individual who scores low on Irritability may be fairly unperturbed by negative things, although this does not mean that they lack concern regarding what happens in the world.</p>
+<p style="text-align:center"><strong>Your score of 46 on Irritability places you higher than 34% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Irritability/46.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Irritability scale indicates that you are less likely to experience frustration or anger in response to things. It may be that you are simply less fazed by the negative things that happen to you, or that you have cultivated your ability to be patient and less reactive to things. Whatever the underlying reason, you are likely to have a firm handle on your angry emotions and to be more moderate in your reactions to things than the average person.</p><p style="text-align:center">"<ital>You don't have to attend every argument you're invited to.</ital>"<br></p>
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Honesty</strong></h3>
+<p></p>
+
+<p>The Honesty dimension relates mainly to the behaviors of cheating or lying, but it also extends more generally to include one's willingness to take advantage of others for their own benefit.  Individuals who are less honest would be more likely, for example, to deceive others or cut corners when there are no perceived consequences (and maybe even when there are consequences).  Highly honest individuals, on the other hand, are more likely to uphold social norms about stealing, cheating, and acting in good faith in interpersonal relationships.  Of course, the social demands for honesty are quite high and, ironically, dishonest individuals may be relatively unlikely to respond openly to items about lying and cheating. The feedback provided here is based on the answers you gave, so the accuracy of your scores will reflect the degree to which you were honest with yourself!</p>
+<p style="text-align:center"><strong>Your score of 47 on Honesty places you higher than 38% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Honesty/47.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Honesty scale indicates that you are a little bit lower than average on the Honesty scale.  This does not mean that you are necessarily a dishonest individual!  To the contrary, it is sometimes the case that individuals with lower scores on this trait are simply less troubled by relatively benign rule-breaking behavior.  It's also ironically possible to get a low Honesty score by being more willing to disclose your dishonest behavior.  Regardless of how this occurred, be sure to keep in mind that many types of dishonest behavior can get you into an awful lot of trouble.</p><p style="text-align:center">"<ital>You can always trust a dishonest man to be dishonest. Honestly, it's the honest ones you have to watch out for.</ital>"<br>&mdash; Captain Jack Sparrow, 'Pirates of the Caribbean'</p>
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Order</strong></h3>
+<p></p>
+
+<p>Orderliness is generally valued as an aspect of personality because it is suggestive of tendencies towards organization, predictability, and cleanliness.  Like all traits however, it is not true that more orderly behavior is always better.  An excessive desire for order can lead to perfectionistic behaviors and unrealistic expectations.  In extreme cases, the inability to tolerate even small amounts of disorder may be associated with mental health issues.  Orderliness scores tend to be positively correlated with Industry and Perfectionism but are negatively correlated with Sensation-Seeking and Easy-Goingness.</p>
+<p style="text-align:center"><strong>Your score of 53 on Order places you higher than 62% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Order/53.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Order scale indicates that you are somewhat high in orderliness.  While details are important to you, you're willing to let things slide sometimes.  You likely prefer order and regularity in your work and surroundings but you are not insistent on perfection.  You also probably recognize that there are many aspects of life that simply cannot be controlled so there's no point in getting too worked up about it.</p><p style="text-align:center">"<ital>Outer order contributes to inner calm.</ital>"<br>&mdash; Gretchen Rubin</p>
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Conformity</strong></h3>
+<p></p>
+
+<p>The Conformity factor concerns an individual's self-perception of normalcy, as well as their desire to be seen as an ordinary or average person. The pressure to conform is strongly connected to group acceptance, and can emanate from many sources, including mainstream media, social institutions, families, and peers. In many cultures, being "normal" often means that one is more readily accepted and therefore likely able to access shared resources of both tangible and immaterial nature. An individual high in Conformity may feel these pressures more keenly and have more of a desire to feel and be seen as normal. They typically have less interest in sticking out or in flaunting their differences. They probably feel more comfortable finding common ground with others and identifying with the interests of others.  Conversely, an individual who is low in Conformity strives to be unique and would hate to be seen as ordinary or mainstream. They may pride themselves on thinking and acting outside the box.</p>
+<p style="text-align:center"><strong>Your score of 47 on Conformity places you higher than 38% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Conformity/47.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Conformity scale indicates that you are somewhat lower in Conformity. Most likely, you see yourself as a more unique individual. Others may perceive you as being a bit different, and this may not necessarily upset you. You may often bring originality and creativity of thought or expression to the table when others are stumped or stuck in a rut. You are probably not overly concerned with fitting in, or are at least willing to sacrifice some social commonality or agreement in the name of individuality and/or innovation.</p><p style="text-align:center">"<ital>I think the reward for conformity is that everyone likes you except yourself.</ital>"<br>&mdash; Rita Mae Brown</p>
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Industry</strong></h3>
+<p></p>
+
+<p>Industry is characterized by the virtues of diligence and perseverance and industrious individuals tend to be hard-working, efficient, and reliable.  When given a task, they typically get to work right away and make a point of completing the task promptly and successfully.  Given their strong work ethic, industrious people tend to be pre-occupied, at times, with tasks that less-conscientious individuals do not value.  Less industrious individuals are not necessarily unproductive, but they do tend to be more laid back and more easily disinterested when the going gets tough.</p>
+<p style="text-align:center"><strong>Your score of 48 on Industry places you higher than 42% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Industry/48.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Industry scale indicates that you are somewhat lower than average in industriousness.  This suggests that you have a reasonable balance between working and enjoying yourself.  While you may view yourself as a relatively dependable worker, you also probably don't consider your work (or schoolwork) to be the most important factor in your life.  You may waste a little too much time occasionally but you typically get important tasks done when you need to.</p><p style="text-align:center">"<ital>All work and no play makes Jack a dull boy.</ital>"<br>&mdash; James Howell</p>
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Intellect</strong></h3>
+<p></p>
+
+<p>The Intellect scale measures how quickly an individual grasps new concepts, and how much information they can mentally handle at once. A person's Intellect score is not necessarily a complete indicator of how "smart" they are, let alone how much they know, but rather a more specific measure of the speed with which they learn new things. Of course, intelligence, which is a broader concept unique from one's Intellect, can also involve one's ability to recall and utilize what one has learned, to think deeply and critically, and even to stick to the task of learning. While an individual with a higher Intellect score might process a lot of new material quickly, someone with a lower Intellect score might adopt a more methodical or pragmatic approach.</p>
+<p style="text-align:center"><strong>Your score of 48 on Intellect places you higher than 42% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Intellect/48.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Intellect scale indicates that you are somewhat less interested in philosophical concerns. While you might pick up some things quickly, other topics might require more time (perhaps because you are not really interested). It is likely that in general, you take a more careful or thorough approach to learning and spend longer sorting out your thoughts and planning your words. This may mean that when you arrive at your final conclusion, it is more polished and coherent than it would be otherwise.</p><p style="text-align:center">"<ital>We should take care not to make Intellect our God; it has, of course, powerful muscles, but no personality.</ital>"<br>&mdash; Albert Einstein</p>
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Adaptability</strong></h3>
+<p></p>
+
+<p>An adaptable individual is someone who can more readily adjust to changes in their environment. They are more likely to crave novelty and variety in their life, and to find themselves bored with routine. Adaptability also relates to one's ability to perform on the fly, or conversely to one's preference for comprehensive planning. Individuals low in Adaptability may find themselves more flustered by change, as they prefer plans and the stability of repetition. Not knowing what will come next is more a source of concern or frustration than of excitement.</p>
+<p style="text-align:center"><strong>Your score of 49 on Adaptability places you higher than 46% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Adaptability/49.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Adaptability scale indicates that you are somewhat lower in Adaptability. You make take longer to accept change and to adjust to it. Although you may at times surprise yourself with your ability to take things in stride, for the most part you probably prefer routine and don't like surprises or sudden turns in fate.</p><p style="text-align:center">"<ital>The secret of your future is hidden in your daily routine.</ital>"<br>&mdash; Mike Murdock</p>
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Charisma</strong></h3>
+<p></p>
+
+<p>The Charisma scale measures one's adeptness in a range of social situations. Charisma is often described as one of those unusual traits that are hard to define but easy to recognize in others.  It is broadly understood as one's skill in handling interpersonal relations and influencing others. It seems to involve a variety of factors including confidence, friendliness, expressive body language, warmth and sincerity. Individuals with unusually high Charisma are social butterflies who rarely seem flustered or disconcerted. They can often seem impressively uninhibited when approaching others or speaking publicly. Individuals low in Charisma often find it difficult to know what to say or do around other people and struggle to get others to see their way.  While Charisma often contributes to strong leadership potential, many successful leaders have been notoriously uncharismatic.</p>
+<p style="text-align:center"><strong>Your score of 49 on Charisma places you higher than 46% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Charisma/49.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Charisma scale indicates that you are not always entirely comfortable with navigating social situations. You may sometimes find yourself at a loss for what to say or do around other people. Although you may have deep and enduring relationships with those close to you, you struggle a bit to find points of commonality with strangers or to engage in more shallow small-talk at networking events. It is likely that public speaking in front of large crowds would stress you out more than most.</p><p style="text-align:center">"<ital>Charisma becomes the undoing of leaders.  It makes them inflexible, convinced of their own infallibility, unable to change.</ital>"<br>&mdash; Peter Drucker</p>
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Attention-Seeking</strong></h3>
+<p></p>
+
+<p>Despite the connotations that are often associated with Attention-Seeking, it is not necessarily a narcissistic or negative trait. Rather, Attention-Seeking can be motivated by a variety of concerns, including a desire to please people by making them happy or entertained. Those who are more sociable, humorous and charismatic often take center stage at social gatherings, for example, so it should be no surprise that Attention-Seeking is most highly correlated with those traits. It is true of course that those high in Attention-Seeking sometimes put on a show to impress others and this behavior is sometimes perceived as self-serving.  Attention-seeking behavior is often quite effective and this means that individuals who are high in this trait are often perceived as being more popular and having more social connections. Individuals low in Attention-Seeking prefer to be on the sidelines and out of the spotlight. This sometimes allows them to be more observant of what is going on around them. Though they are less likely than those high in Attention-Seeking to be noticed or immediately admired, they are not necessarily misanthropic or without social skills. They may simply prefer social interactions in which all parties contribute on a roughly equal level.</p>
+<p style="text-align:center"><strong>Your score of 51 on Attention-Seeking places you higher than 54% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/AttentionSeeking/51.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Attention-Seeking scale indicates that you are somewhat high in Attention-Seeking. Most likely, finding yourself at the center of others' attention doesn't upset you too much. At a social gathering, people may expect to see you being engaging and interesting. Still, there are probably times when you would prefer to escape or avoid the spotlight in order to make time for quiet reflection and relaxation.</p><p style="text-align:center">"<ital>The wheel that squeaks the loudest is the one that gets the grease.</ital>"<br>&mdash; Josh Billings</p>
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Emotional Expressiveness</strong></h3>
+<p></p>
+
+<p>The Emotional Expressiveness factor involves the degree to which an individual is comfortable sharing their feelings, perspectives, and experiences with others. Emotional expressiveness is related to emotion regulation, though the nature of this relationship can be complicated.  Those who are emotionally expressive tend to be more aware of how they're feeling, and it is generally believed that higher levels of expression are helpful for emotion regulation.  It may also be the case however that excessive emotional expression (or emotional expression that is not well-received by others) can be counter-productive for emotion regulation.  Individuals who are high in Emotional Expressiveness are less inhibited about showing their emotions in front of others, and may be less concerned with how others perceive them. Individuals low in Emotional Expressiveness typically feel more pressure to keep up an appearance of emotional stability, and may be more guarded in showing their true feelings.</p>
+<p style="text-align:center"><strong>Your score of 49 on Emotional Expressiveness places you higher than 46% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/EmotionalExpressiveness/49.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Emotional Expressiveness scale indicates that you are somewhat low in Emotional Expressiveness. Most likely, you are a bit more guarded about sharing your feelings and revealing information about yourself. It may be that you are wary of burdening others with your negative feelings, or that you just don't feel comfortable talking about your emotions.  While you may be much more open with others after you get to know them a little, they will probably have to earn your trust before you're comfortable revealing your true self. </p><p style="text-align:center">"<ital>The world is a tragedy to those who feel, but a comedy to those who think.</ital>"<br>&mdash; Horace Walpole</p>
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Easy-Goingness</strong></h3>
+<p></p>
+
+<p>Easy-Goingness relates to one's preferred pace of lifestyle. Whereas individuals who score highly in the Easy-Goingness trait are content to let life proceed at its own pace, those who score low tend to prefer to grab life by the horns. Whereas in some cultures someone who is high in Easy-Goingness may be criticized as lazy or lay-about, in others such an individual is perceived as being content with the way they live their lives. Similarly, someone low in Easy-Goingness could be described as either a go-getter or as overly high-strung.</p>
+<p style="text-align:center"><strong>Your score of 49 on Easy-Goingness places you higher than 46% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/EasyGoingness/49.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Easy-Goingness scale indicates that you are somewhat lower in Easy-Goingness. Most likely, you prefer to be productive and mobile rather than to laze about and watch things pass you by. You may be fairly efficient and have more energy to tackle tasks.</p><p style="text-align:center">"<ital>Get busy. Keep busy. It's the cheapest kind of medicine there is on this earth &mdash; and one of the best.</ital>"<br>&mdash; Dale Carnegie</p>
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Compassion</strong></h3>
+<p></p>
+
+<p>Individuals who are high in Compassion are likely to be perceived as warm and caring individuals who enable others to feel at ease in their presence. Although the draw to people high in Compassion is different from the draw to people who are charismatic or powerful, compassionate people are welcome friends who help those around them to feel cared for and understood.  Compassion is particularly important in the development and maintenance of positive social relationships and there is a growing body of evidence that these are crucial for well-being across the lifespan.  For this reason, Compassion is viewed by many as an important component of a happy life.</p>
+<p style="text-align:center"><strong>Your score of 50 on Compassion places you higher than 50% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Compassion/50.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Compassion scale indicates that you are more compassionate than average.  You may not always be aware of others' feelings, but you likely feel sympathy and concern for those worse off. You care about others and wish the best for them, but are at the same time skilled at balancing your own needs with the needs of others. Although you might often lend a helping hand, you also have a good idea about when to stand up for yourself. While other people likely see you as generally considerate, they may know not to make unreasonable demands of you. </p><p style="text-align:center">"<ital>We rise by lifting others.</ital>"<br>&mdash; Robert Ingersoll</p>
+<hr>
+
+<!-- Next one of 27 -->
+
+<h3 style="text-align:center"><strong>Impulsivity</strong></h3>
+<p></p>
+
+<p>The trait of Impulsivity reflects the tendency to act on a whim, displaying behavior characterized by little or no forethought, reflection, or consideration of the consequences.  Attitudes about Impulsivity in popular culture are often varied and this leads to a stew of mixed messages.  While the prevailing sentiment in Western pop culture encourages spontaneity ("carpe diem!"), the consequences of rash behavior are often really unpleasant. More impulsive individuals are more likely to jump into things without consideration of the consequences and make decisions very quickly.  For some, this tendency is part of a broader worldview that life is better lived in the moment, through bold actions and no regrets.<br>In light of evidence that "gut" intuitions are often as good or better than strategic approaches to decision-making in situations with many uncontrollable factors, it can be hard to argue against the Impulsive approach to life.  But only to a point.  Less impulsive individuals tend to be more successful at tasks that require planning, preparation and persistence &mdash; and these tasks include many of those needed for a healthy and productive life.  Low impulsivity is also beneficial for social relationships, as it is associated with greater reliability, consistency, and consideration of the consequences of one's behavior on friends and family.</p>
+<p style="text-align:center"><strong>Your score of 50 on Impulsivity places you higher than 50% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Impulsivity/50.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Impulsivity scale indicates that you are a bit more impulsive than most.  While you probably know that certain situations require very deliberate decisions, it is likely that you also know when to let loose and not overthink things. Spur-of-the-moment choices have probably caused some behaviors that you later regretted, but that's the price to be paid when chasing after exciting life experiences. Others may admire your ability to balance fastidiousness with spontaneity.</p><p style="text-align:center">"<ital>We are here to laugh at the odds and live our lives so well that Death will tremble to take us.</ital>"<br>&mdash; Charles Bukowski</p>
+<hr>
+
+</div> <!-- closes div class="openHideSPI27" -->
+
+
+											</div><!-- closes div class="12u" -->
+										</div><!-- closes div class="row" -->
+
+</div><!-- closes div class="boxyboxboxInnerText" -->
+</div>  <!-- closes div class="boxyboxboxInner" -->
+</div> <!-- close boxyboxboxOuterSPI27 -->
+
+<!-- SPI27 box done -->
+
+<p></p>
+
+
+<!-- Create the SPI5 box -->
+
+<div class="boxyboxboxOuterSPI5">
+<a name="CA"></a><div style="color: #FFF; font-weight: bold; text-align: center;">Big Five (SPI-5) Scores</div>
+
+<div class="boxyboxboxInnerFactor">
+<p></p>
+<div class="boxyboxboxInnerText">
+
+										<div class="row">
+											<div class="12u">
+
+<p style="text-align:center"><strong>All 5 of your Big Five (SPI-5) scores are shown below.</strong></p>
+
+<hr>
+
+<!-- Loop through the five starting here -->
+
+<h3 style="text-align:center"><strong>Agreeableness</strong></h3>
+<p></p>
+
+<p>Features of Agreeableness include compassion, trust, honesty, and politeness but the defining characteristic may well be empathy. It seems that the ability to recognize others' emotions contributes to all of these underlying traits as well as many other nuances of personality that are often associated with agreeable people. Agreeableness also reflects individual differences in cooperation and social harmony.  While agreeable people are typically more popular than those low on Agreeableness, it is not popularity that motivates them so much as the desire to avoid (or reduce) conflict in their immediate environment.  While this quality has several obvious benefits, Agreeableness is not necessarily useful in situations that are highly stressful or that frequently involve tough decisions.  As a result, people who feel less need to be agreeable often make excellent scientists, critics, or soldiers.</p>
+<p style="text-align:center"><strong>Your score of 44 on Agreeableness places you higher than 27% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Agreeableness/44.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Agreeableness scale indicates that you are somewhat more disagreeable than most others.  You may have less concern with others' needs than with your own. This likely reflects an occasional lack of interest in other people's lives and/or a belief that others should be more resourceful in dealing with their own problems. It may also be that your compassion is limited to some individuals (perhaps friends and family) without extending to acquaintances or strangers. You may tend to be somewhat intolerant of others' shortcomings.  The most disagreeable individuals place self-interest above getting along with others. They are generally unconcerned with others' well-being, and therefore are unlikely to extend themselves for other people. Sometimes their skepticism about others' motives causes them to be suspicious, unfriendly, and uncooperative.</p>
+<hr>
+<!-- Number 2 of 5 -->
+
+<p></p>
+<h3 style="text-align:center"><strong>Conscientiousness</strong></h3>
+<p></p>
+
+<p>By definition, a conscientious individual is guided by an inner sense of what is "right" (this inner sense being known as one's "conscience"). While they may hold dramatically different opinions about the nature of socially acceptable behavior, conscientious individuals typically have reputations for being meticulous, thorough, and deliberate. Extreme conscientiousness can lead to unrealistic expectations and perfectionistic behaviors that are ultimately unproductive.  Conscientiousness is most highly associated with Industry and Order, though it is also positively correlated with low impulsivity, authoritarian views, honest behavior and strong self-control.  Most of these traits relate to self-discipline in one way or another, a feature which likely contributes to the similarity between Conscientiousness and traditional conceptions of "character."  While some of the traits within Conscientiousness seem similar enough to be redundant, they generally have unique relationships with other aspects of behavior.  For example, Impulsivity relates to the general tendency to act without thinking while Self-Control is the ability to resist temptations and cravings.</p>
+<p style="text-align:center"><strong>Your score of 48 on Conscientiousness places you higher than 42% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Conscientiousness/48.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Conscientiousness scale indicates that you are somewhat laid back; details, order, ambition, and goals are probably not the highest priorities for you. Although you may prefer regularity or work hard at times, it is likely you are not insistent on perfection. You may sometimes prefer to live for the moment and do what feels good now, instead of delaying gratification for the sake of longer-term objectives. Your work may also tend to be a little more careless or disorganized. On the other hand, you are less likely to be a workaholic, and others may see you as easy-going and fun-to-be-with.  Individuals who are more laid back than you can have trouble detecting mistakes or inconsistencies. However, they rarely have unrealistic expectations and they are less pre-occupied with tasks.</p>
+<hr>
+<!-- Number 3 of 5 -->
+
+<p></p>
+<h3 style="text-align:center"><strong>Extraversion</strong></h3>
+<p></p>
+
+<p>Extraversion is perhaps the most widely recognized feature of human personality. The popularized notion of Extraversion is mainly limited to the idea that extraverts seek out social interaction while introverts spend more time alone. Personality theorists suggest that the extraversion/introversion dimension is more accurately framed as a function of stimulation. Individuals who are more sensitive to outside stimuli (introverts) tend to prefer interacting in small groups. They also engage more often in independent, analytical, and cognitively-demanding activities. Extraverts are less sensitive to external stimuli and, as a result, seek more of it. They tend to enjoy large gatherings, act more gregariously, and are quick to assert themselves.</p>
+<p style="text-align:center"><strong>Your score of 49 on Extraversion places you higher than 46% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Extraversion/49.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Extraversion scale indicates that you are somewhat introverted. You are probably more reserved and quiet than most others. You may enjoy solitude and solitary activities a bit more than others, and your socializing may be restricted to a small circle of close friends. While you may occasionally enjoy large parties and meeting new people, it probably depends on the circumstances and your energy level. You are more likely to allow others to take charge so that you can avoid the spotlight, which has the advantage of being seen as less threatening by others. You may not be known as having a strong personality, but most likely you can still be effective at influencing others as long as you have time to gather your thoughts.  The occasional avoidance of social interaction by introverts does not necessarily mean they are shy or depressed; these people simply need less stimulation than those who are more extraverted. This independence and willingness to be alone can sometimes be mistaken by others as unfriendliness or aloofness.  However, many introverts (especially those who score highly on Agreeableness) are quite pleasant when approached even though they do not actively seek out interaction.</p>
+<hr>
+<!-- Number 4 of 5 -->
+
+<p></p>
+<h3 style="text-align:center"><strong>Neuroticism</strong></h3>
+<p></p>
+
+<p>The trait of Neuroticism is marked by elevated reactivity to stress and the more frequent experience of emotions that most people view as negative or unpleasant &mdash; anxiety, sadness, frustration, fear, and anger.  Neurotic individuals view the world as relatively more threatening and dangerous.  Historically, use of the label neuroticism (or neurotic, as an adjective) stemmed from the idea that individuals behave in ways that are more or less affected by neuroses &mdash; nervous disorders.  While the term neurosis is now rarely used by health professionals, the term Neuroticism is still used for the personality trait relating to the persistent tendency to be in a negative mood state.  Some people feel that this label is unnecessarily negative, though the truth is that nearly everyone behaves neurotically from time to time and most neurotic behaviors are within socially acceptable limits.  Individuals with low levels of neuroticism are less likely to become upset by stress and spend relatively less time feeling worried, scared, and angry &mdash; but just about everyone experiences these emotions sometimes.  It's no surprise that highly neurotic individuals are at risk for a range of mental health concerns, but more recent research suggests that these risks also extend to several physical health concerns.</p>
+<p style="text-align:center"><strong>Your score of 42 on Neuroticism places you higher than 21% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Neuroticism/42.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Neuroticism scale indicates that you are more even tempered than most people. This suggests that you generally experience fewer emotional swings throughout the day and that you react less strongly to stressful events.  While you regularly feel negative emotions (fear/worry, sadness, irritability, anger), you likely experience them less often and less intensely than most people.  You may still get very upset on rare occasions, but others probably appreciate your relatively calm demeanor.</p>
+<hr>
+<!-- Number 5 of 5 -->
+
+<p></p>
+<h3 style="text-align:center"><strong>Openness</strong></h3>
+<p></p>
+
+<p>Openness is probably the most broadly encompassing factor of personality.  In fact, many people are surprised to learn that the two most widely studied aspects (Intellect and Openness to New Experiences) are highly positively correlated.  This positive association can be explained by the fact that both aspects share the common trait of being willing to engage with new ideas.  Openness is also associated with traits such as Creativity, Art Appreciation, Introspection, (low) Conformity, and Adaptability.  Openness is often presented as healthier or more mature by psychologists, who are often themselves very open. However, open and conventional styles of thinking are useful in different environments. For example, the intellectual style of an open person may be useful for endeavors that reward novelty, but the more conventional approach of an individual who is low on openness often leads to superior job performance in occupations that emphasize procedure and compliance.</p>
+<p style="text-align:center"><strong>Your score of 45 on Openness places you higher than 31% of previous participants in this survey.</strong></p>
+
+<div class="image-container">
+<img src='https://www.sapa-project.org/survey/reportfigs/Openness/45.png' width='600' height='294'><br></div>
+
+<p style="text-align:center; font-size:10px"><a href="#" onclick="window.open('normal.html', '', 'width=600,height=500');">click for more info about reading this image</a></p>
+
+<p></p>
+<p>Your score on the Openness scale indicates that you are somewhat conventional. You probably prefer to think and act in straight-forward, traditional ways. While you may enjoy working on complex problems at times, you probably don't seek them out very often. Others might describe you as down-to-earth and practical. You may be less comfortable handling lots of information, or you may find many intellectual activities a bit boring or unpleasant.  While you might enjoy certain aspects of the arts and sciences, the most highly conventional individuals often view these domains with skepticism or of little practical use.  Conventional people tend to prefer familiarity over novelty, and this preference often underlies conservative beliefs and a resistance to change.  Very conventional individuals sometimes hold fundamentalist or dogmatic beliefs.</p>
+											</div><!-- closes div class="12u" -->
+										</div><!-- closes div class="row" -->
+
+</div><!-- closes div class="boxyboxboxInnerText" -->
+</div>  <!-- closes div class="boxyboxboxInner" -->
+</div> <!-- close boxyboxboxOuterSPI5 -->
+
+<!-- SPI5 box done -->
+
+<p></p>
+
+<!-- Create the Cognition box -->
+
+<div class="boxyboxboxOuterCognition">
+<a name="CA"></a><div style="color: #FFF; font-weight: bold; text-align: center;">Cognition</div>
+
+<div class="boxyboxboxInner">
+<p></p>
+<div class="boxyboxboxInnerText">
+
+										<div class="row">
+											<div class="12u">
+
+<p>While there are several competing theories in cognitive ability research, there is also growing consensus that abilities are best organized hierarchically. In other words, each of the many different components of cognitive ability involve different sets of skills and these components are typically organized according to similarities among the tasks/skills involved.  On the most narrow level, it is often difficult to distinguish between the skills used to accomplish a given task, but on the broadest level (at the top of the hierarchy), general skill sets are more plainly evident.  For example, the skills required for different types of verbal tasks are more similar than those required for verbal and spatial tasks.</p><p>The items given here include several different types and we are actively working to develop more.  In order to keep the test short, each participant is only administered a subset of the question types.  Current question types include Letter and Number Series, Matrix Reasoning, Three-Dimensional Rotations, Verbal Reasoning (which includes general knowledge, logic and arithmetic questions), Figural Analogies, Two-Dimensional Rotations, Compound Remote Associates, Additions and Subtractions, Propositional Reasoning, and Emotion Recognition.</p><p>At this time, we are only giving feedback based on your responses to the Letter and Number Series items, the Three-Dimensional Rotation items, the Matrix Reasoning items, and the Verbal Reasoning items.  This is because we don't yet have a big enough sample to generate representative norms for the other item types.  Your responses have contributed to the development of these norms for future test-takers.</p>
+											</div><!-- closes div class="12u" -->
+										</div><!-- closes div class="row" -->
+
+
+<p style="text-align:center"><strong>You didn't answer any Cognition questions so we can't provide an estimate of your score for this domain.</strong></p>
+
+
+</div><!-- closes div class="boxyboxboxInnerText" -->
+</div>  <!-- closes div class="boxyboxboxInner" -->
+</div> <!-- close boxyboxboxOuterCognition -->
+
+<!-- Cognition box done -->
+						</div> <!-- 12u mobileUI-main-content -->
+					</div> <!-- closes row -->
+
+<p></p>
+
+<div id="share-buttons">
+<p style="text-align:center">    
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=https://sapa-project.org/" target="_blank">
+        <img src="https://sapa-project.org/images/facebook.png" alt="Facebook" />
+    </a>
+    
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=https://sapa-project.org/&amp;text=Check%20out%20my%20personality%20signature&amp;hashtags=mySPIscores" target="_blank">
+        <img src="https://sapa-project.org/images/twitter.png" alt="Twitter" />
+    </a>
+    
+    <!-- LinkedIn -->
+    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://sapa-project.org/" target="_blank">
+        <img src="https://sapa-project.org/images/linkedin.png" alt="LinkedIn" />
+    </a>
+    
+    <!-- Reddit -->
+    <a href="http://reddit.com/submit?url=https://sapa-project.org/&amp;title=Reddit" target="_blank">
+        <img src="https://sapa-project.org/images/reddit.png" alt="Reddit" />
+    </a>
+    
+    <!-- Tumblr-->
+    <a href="http://www.tumblr.com/share/link?url=https://sapa-project.org/&amp;title=Tumblr" target="_blank">
+        <img src="https://sapa-project.org/images/tumblr.png" alt="Tumblr" />
+    </a>
+     
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=https://sapa-project.org/" target="_blank">
+        <img src="https://sapa-project.org/images/google.png" alt="Google" />
+    </a>
+    
+    <!-- Email -->
+    <a href="mailto:?Subject=mySPIscores&amp;Body=Check%20out%20my%20personality%20signature!%20 https://sapa-project.org/">
+        <img src="https://sapa-project.org/images/email.png" alt="Email" />
+    </a>
+</p> 
+</div>
+
+
+
+									</div> <!-- closes 5grid -->
+								</div> <!-- closes content -->
+						</div> <!-- 12u mobileUI-main-content -->
+					</div> <!-- closes row -->
+				</div> <!-- closes 5grid-layout -->
+			</div> <!-- closes main-wrapper -->
+
+		<!-- Footer Wrapper -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="5grid-layout">
+					<div class="row">
+						<div class="12u">
+							<div id="copyright">
+							<center>
+								&copy; Developed by <a style="text-decoration:underline;" href="https://pielab-science.com/dmc/">David M. Condon</a> as part of the <a style="text-decoration:underline;" href="http://personality-project.org/">Personality Project</a>.
+							</center>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+	</body>
+</html>
+

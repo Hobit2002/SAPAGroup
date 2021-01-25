@@ -1,0 +1,90 @@
+https://www.sapa-project.org/survey/demographics.php
+demoTime: 1611075469.723
+no_code: 1
+zipage: 18
+zip: 
+sex: 1
+marstatus: 999
+english: 999
+health: 999
+country: 999
+state: 999
+p1occ: 999
+p1edu: 999
+p2occ: 999
+p2edu: 999
+education: 999
+discipline: 999
+major: 999
+jobstatus: 999
+jobfield: 999
+occupation: 999
+military: 999
+
+***
+
+page1Time: 1611076743.175
+51775: 3
+90: 5
+1444: 2
+4108: 4
+1392: 3
+808: 4
+3981: 2
+1923: 3
+2853: 3
+3988: 3
+169: 5
+240: 4
+51800: 3
+979: 3
+1296: 4
+4095: 3
+871: 2
+530: 1
+4139: 2
+1738: 5
+1357: 5
+4038: 5
+12016: 3
+12056: 4
+18016: 3
+submitGo: Next page
+---
+Title:Personality Questions 
+Introduction:Most of these are short phrases that you should respond to by indicating how accurately the statement describes your typical behavior or attitudes.  For example, you might select 'slightly accurate' for 'Laugh a lot.'  Other types of items are mixed in as well, including cognition/puzzle items, questions that ask about how you spend your free time, and questions that ask how interested you would be in working certain jobs.  Each of these types of questions relate to different features of personality.  For all types, <strong>choose the one answer that you think is best.
+
+Final request:
+insurance: 1
+height: 71
+weight: 153
+exer: 4
+smoke: 1
+prescriptions: 3
+flu: 1
+caffeine: 5
+diabetes: 3
+veggie: 3
+stress: 2
+brush: 4
+floss: 2
+dentist: 2
+sleepQ: 3
+sleepT: 2
+say: 2
+stay: 2
+strive: 4
+ethnic: 999
+SES: 3
+relsat: 2
+religion: 4
+sign: 2
+volunteer: 5
+mascfem: 2
+religious: 2
+MBTI: 4
+credit: 3
+orientation: 2
+tweets: 2
+ennea: 1
+submit: 

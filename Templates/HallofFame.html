@@ -1,0 +1,27 @@
+{% extends 'Template.html' %}
+{% block content %}
+<div id="NewTest">
+    <div class="4u offset-4u">
+        <h3>Game code:{{GameCode}}</h3>
+        <div id="MemberList"></div>
+            <div id="HidePart">
+                <button id="AddPartic" onclick="RequestResult()">Results?</button>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+function RequestResult(){
+    $.ajax({
+        url:"/RequestResult",
+        success:function(result){
+            window.location=result
+        }
+    })
+}
+
+</script>
+{% endblock %}
